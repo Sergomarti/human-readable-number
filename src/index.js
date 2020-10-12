@@ -1,5 +1,5 @@
-module.exports = function toReadable (n) {
-    var string = n.toString(), units, tens, scales, start, end, chunks, chunksLen, chunk, ints, i, word, words, and = 'and';
+module.exports = function toReadable (number) {
+    var string = number.toString(), units, tens, scales, start, end, chunks, chunksLen, chunk, ints, i, word, words;
         string = string.replace(/[, ]/g,"");
         if( parseInt( string ) === 0 ) {
             return 'zero';
